@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import avatarBig from '../assets/avatar-big.png';
+
 export const Hero = () => {
   return (
     <>
@@ -22,15 +24,15 @@ export const Hero = () => {
             <a
               className='bg-black text-white font-bold text-2xl px-8 py-3 rounded-2xl shadow-[6px_6px_0px_0px_#00c6ae]'
               href='/VolodymyrDudych.pdf'
-              download='VolodymyrDudychCV.pdf'
+              download='VolodymyrDudych.pdf'
             >
               Download CV
             </a>
           </div>
         </div>
         <Image
-          src={'/avatar-big.png'}
-          alt={'Avatar image'}
+          src={avatarBig}
+          alt={'Volodymyr Dudych'}
           width={480}
           height={610}
           loading='eager'
