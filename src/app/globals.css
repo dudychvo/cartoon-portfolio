@@ -3,3 +3,12 @@
 body {
   background-color: #ffdd55;
 }
+
+*,
+*::before,
+*::after,
+a,
+button,
+[role="button"] {
+  cursor: none !important;
+}
