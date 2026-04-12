@@ -23,17 +23,6 @@ export const Footer = () => {
       </p>
       <div className='flex flex-row gap-8'>
         <div className='w-32 h-32 rounded-full bg-white overflow-hidden flex items-center justify-center'>
-          <a href='tel:+447402990960' target='_blank' rel='noopener noreferrer'>
-            <Image
-              src='/instagram.png'
-              alt='Instagram'
-              width={80}
-              height={80}
-              className='grayscale hover:grayscale-0 transition duration-300 hover:scale-110'
-            />
-          </a>
-        </div>
-        <div className='w-32 h-32 rounded-full bg-white overflow-hidden flex items-center justify-center'>
           <a
             href='https://github.com/dudychvo'
             target='_blank'
@@ -44,6 +33,17 @@ export const Footer = () => {
               alt='Github'
               width={80}
               height={80}
+              className='grayscale hover:grayscale-0 transition duration-300 hover:scale-110'
+            />
+          </a>
+        </div>
+        <div className='w-32 h-32 rounded-full bg-white overflow-hidden flex items-center justify-center'>
+          <a href='tel:+447402990960' target='_blank' rel='noopener noreferrer'>
+            <Image
+              src='/instagram.png'
+              alt='Instagram'
+              width={95}
+              height={95}
               className='grayscale hover:grayscale-0 transition duration-300 hover:scale-110'
             />
           </a>
