@@ -41,44 +41,11 @@ export const Hero = () => {
               className='bg-black text-white font-bold text-2xl px-8 py-3 rounded-2xl shadow-[6px_6px_0px_0px_#00c6ae] transition-all hover:-translate-y-0.5 hover:-translate-x-0.5 hover:shadow-[8px_8px_0px_0px_#00c6ae] active:translate-y-1.5 active:translate-x-1.5 active:shadow-none'
               href='/VolodymyrDudych.pdf'
               target='_blank'
-              rel='noopener noreferrer'
             >
               Look at my CV
             </a>
           </div>
         </div>
-        {/* <div
-          className='group relative w-120 h-152.5 perspective-[1000px]'
-          onClick={() => setIsFlipped(!isFlipped)}
-          role='button'
-        >
-          <div
-            className={`relative w-full h-full transition-all duration-700 transform-3d group-hover:-translate-y-3 ${
-              isFlipped ? 'transform-[rotateY(180deg)]' : ''
-            }`}
-          >
-            <div className='absolute inset-0 backface-hidden'>
-              <Image
-                src={avatarDefault}
-                alt='Volodymyr Dudych Illustration'
-                width={480}
-                height={610}
-                loading='eager'
-                className='w-full h-full object-contain'
-              />
-            </div>
-            <div className='absolute inset-0 backface-hidden transform-[rotateY(180deg)]'>
-              <Image
-                src={avatarOriginal}
-                alt='Volodymyr Dudych Real Photo'
-                width={480}
-                height={610}
-                loading='eager'
-                className='w-full h-full object-contain'
-              />
-            </div>
-          </div>
-        </div> */}
         <div
           className='group relative w-120 h-152.5 perspective-[1000px]'
           onClick={() => setIsFlipped(!isFlipped)}
@@ -89,7 +56,6 @@ export const Hero = () => {
               isFlipped ? 'transform-[rotateY(180deg)]' : ''
             }`}
           >
-            {/* Front Face */}
             <div className='absolute inset-0 backface-hidden rounded-2xl border-[5px] border-black shadow-2xl overflow-hidden bg-white'>
               <Image
                 src={avatarDefault}
@@ -100,8 +66,6 @@ export const Hero = () => {
                 className='w-full h-full object-cover'
               />
             </div>
-
-            {/* Back Face */}
             <div className='absolute inset-0 backface-hidden transform-[rotateY(180deg)] rounded-2xl border-[5px] border-[#0ac2ab] shadow-2xl overflow-hidden bg-white'>
               <Image
                 src={avatarOriginal}
