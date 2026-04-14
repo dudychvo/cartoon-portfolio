@@ -29,7 +29,7 @@ export const Footer = () => {
             rel='noopener noreferrer'
           >
             <Image
-              src='/github.png'
+              src='/socials/github.png'
               alt='Github'
               width={80}
               height={80}
@@ -40,7 +40,7 @@ export const Footer = () => {
         <div className='w-32 h-32 rounded-full bg-white overflow-hidden flex items-center justify-center'>
           <a href='tel:+447402990960' target='_blank' rel='noopener noreferrer'>
             <Image
-              src='/instagram.png'
+              src='/socials/instagram.png'
               alt='Instagram'
               width={95}
               height={95}
@@ -55,7 +55,7 @@ export const Footer = () => {
             rel='noopener noreferrer'
           >
             <Image
-              src='/linkedin.png'
+              src='/socials/linkedin.png'
               alt='LinkedIn'
               width={80}
               height={80}
