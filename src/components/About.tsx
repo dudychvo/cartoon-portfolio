@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import avatarSmall from '../assets/avatarDefault1.png';
 import avatarOriginal from '../assets/me1.png';
-import { FlipCard } from './FlipCard';
+import { FlipCard } from './client/FlipCard';
 
 const CONTACT_LINKS = [
   {
@@ -32,13 +32,11 @@ export const About = () => {
           backAlt='Volodymyr Dudych Real Photo'
           width={385}
           height={480}
-          // ADDED HOVER SCALE EFFECT HERE:
           containerClassName='transition-transform duration-300 hover:scale-105 will-change-transform'
           frontClassName='rounded-3xl border-4 border-black bg-[#FFDD55]'
           backClassName='rounded-3xl border-4 border-black bg-white'
         />
       </div>
-
       <div className='flex flex-col max-w-2xl'>
         <h2 className='text-[72px] font-extrabold leading-none tracking-tight mb-2'>
           About me.
@@ -55,7 +53,6 @@ export const About = () => {
           fusion of clean, modern design and seamless, performant frontend
           architecture using React and Next.js.
         </p>
-
         <div className='flex flex-col gap-4'>
           <span className='text-lg font-bold text-white opacity-80 uppercase tracking-[0.2em]'>
             Get in touch:
