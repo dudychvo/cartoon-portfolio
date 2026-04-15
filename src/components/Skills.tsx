@@ -62,7 +62,8 @@ export const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className='group bg-white flex flex-col items-center px-6 py-8 rounded-3xl border-4 border-black shadow-[0px_6px_0px_0px_#000,0px_0px_0px_1px_#000] transition-all hover:-translate-y-2 hover:shadow-[0px_14px_0px_0px_#000,0px_0px_0px_1px_#000] hover:bg-[#FFDD55] will-change-transform'
+            // Removed default shadow here! Kept the hover shadow and transformations.
+            className='group bg-white flex flex-col items-center px-6 py-8 rounded-3xl border-4 border-black transition-all hover:scale-[1.02] hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[4px_4px_0px_0px_#000,0px_0px_0px_1px_#000] hover:bg-[#FFDD55] will-change-transform cursor-pointer'
           >
             <div className='bg-gray-100 border-[3px] border-black rounded-2xl p-4 mb-6 transition-transform group-hover:scale-110 group-hover:bg-white shadow-[0px_4px_0px_0px_#000,0px_0px_0px_1px_#000] flex items-center justify-center w-24 h-24 will-change-transform'>
               <div
