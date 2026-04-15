@@ -1,4 +1,6 @@
+// src/components/Footer.tsx
 import Image from 'next/image';
+import { FooterTypewriter } from './client/FooterTypewriter';
 
 export const Footer = () => {
   return (
@@ -12,16 +14,14 @@ export const Footer = () => {
           alt={'Website logo'}
           width={100}
           height={100}
+          className='w-auto h-30'
         />
         <p className='text-[48px] font-extrabold text-center'>
           Volodymyr Dudych
         </p>
       </div>
-      <p className='text-[32px] font-bold text-center w-225'>
-        Just a frontend developer focused on writing code, continually learning
-        new things, and enjoying a daily cappa.
-      </p>
-      <div className='flex flex-row gap-8'>
+      <FooterTypewriter />
+      <div className='flex flex-row gap-8 mt-4'>
         <div className='w-32 h-32 rounded-full bg-white overflow-hidden flex items-center justify-center'>
           <a
             href='https://github.com/dudychvo'
@@ -64,7 +64,6 @@ export const Footer = () => {
           </a>
         </div>
       </div>
-      <div></div>
     </div>
   );
 };
