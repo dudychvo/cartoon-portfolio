@@ -1,4 +1,4 @@
-import { CustomCursor } from '@/components/CustomCursor';
+import { CustomCursor } from '@/components/client/CustomCursor';
 
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
