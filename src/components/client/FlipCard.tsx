@@ -48,25 +48,25 @@ export const FlipCard = ({
 
   return (
     <div
-      // Added `w-full h-full` so it rigidly fills the parent constraints
       className={`group relative perspective-[1000px] cursor-pointer w-full h-full ${containerClassName}`}
       onClick={() => setIsFlipped(!isFlipped)}
-      role="button"
+      role='button'
     >
       <div
-        // Added `absolute inset-0` to lock the 3D transforming box to the exact pixel boundaries of the parent
         className={`absolute inset-0 w-full h-full transition-all duration-700 transform-3d group-hover:-translate-y-3 ${
           isFlipped ? 'transform-[rotateY(180deg)]' : ''
         }`}
       >
-        <div className={`absolute inset-0 backface-hidden overflow-hidden ${frontClassName}`}>
+        <div
+          className={`absolute inset-0 backface-hidden overflow-hidden ${frontClassName}`}
+        >
           <Image
             src={frontImage}
             alt={frontAlt}
             width={width}
             height={height}
-            loading="eager"
-            className="w-full h-full object-cover"
+            loading='eager'
+            className='w-full h-full object-cover'
           />
         </div>
         <div
@@ -77,8 +77,8 @@ export const FlipCard = ({
             alt={backAlt}
             width={width}
             height={height}
-            loading="eager"
-            className="w-full h-full object-cover"
+            loading='eager'
+            className='w-full h-full object-cover'
           />
         </div>
       </div>
