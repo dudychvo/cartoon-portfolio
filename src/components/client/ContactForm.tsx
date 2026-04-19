@@ -1,4 +1,3 @@
-// src/components/client/ContactForm.tsx
 'use client';
 
 import { useForm } from 'react-hook-form';
@@ -129,7 +128,6 @@ export default function ContactForm() {
             }`}
           />
         </div>
-
         <div className='flex flex-col gap-2'>
           <div className='flex justify-between items-center ml-1'>
             <label htmlFor='email' className='text-xl font-bold text-black'>
@@ -150,7 +148,6 @@ export default function ContactForm() {
             }`}
           />
         </div>
-
         <div className='flex flex-col gap-2'>
           <div className='flex justify-between items-center ml-1'>
             <label htmlFor='message' className='text-xl font-bold text-black'>
@@ -172,7 +169,6 @@ export default function ContactForm() {
             }`}
           />
         </div>
-
         <button
           type='submit'
           disabled={isSubmitting}
