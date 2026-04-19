@@ -109,6 +109,17 @@ describe('#ContactForm', () => {
           body: expect.any(FormData),
         }),
       );
+
+      const [, options] = mockFetch.mock.calls[0];
+      const formData = options.body as FormData;
+      expect(formData.get('access_key')).toBe('test-key');
+      expect(formData.get('subject')).toBe('New Message from Alex');
+      expect(formData.get('name')).toBe('Alex');
+      expect(formData.get('email')).toBe('alex@example.com');
+      expect(formData.get('message')).toBe(
+        'Hello there, this is a valid message.',
+      );
+
       expect(toast.success).toHaveBeenCalledWith(
         'Message Sent!',
         expect.objectContaining({
