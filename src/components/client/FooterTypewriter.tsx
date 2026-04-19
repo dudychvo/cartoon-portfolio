@@ -4,6 +4,8 @@
 import { useState } from 'react';
 import Typewriter from 'typewriter-effect';
 
+import { shuffleArray } from '@/utils/shuffleArray';
+
 const phrases = [
   'Just a frontend developer focused on writing code, continually learning new things, and enjoying a daily cappa.',
   'Turning daily cappuccinos into clean, scalable React code.',
@@ -27,20 +29,10 @@ const phrases = [
   'Writing code that makes users happy and keeps other developers from pulling their hair out.',
 ];
 
-const shuffleArray = (array: string[]) => {
-  const shuffled = [...array];
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-  return shuffled;
-};
-
 export const FooterTypewriter = () => {
   const [randomizedPhrases] = useState<string[]>(() => shuffleArray(phrases));
 
   if (randomizedPhrases.length === 0) return null;
-
   return (
     <div className='flex flex-col items-center justify-center min-h-24 w-full max-w-225'>
       <div className='text-[32px] font-bold text-center w-full px-4'>
